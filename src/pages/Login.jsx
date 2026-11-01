@@ -65,19 +65,25 @@ export default function Login() {
         <div style={{ textAlign: 'center', marginBottom: '28px' }}>
           <div 
             style={{
-              width: '56px',
-              height: '56px',
+              width: '76px',
+              height: '76px',
               borderRadius: 'var(--radius-lg)',
-              backgroundColor: 'var(--color-primary)',
-              color: '#FDE68A',
+              overflow: 'hidden',
+              backgroundColor: '#FFFFFF',
+              border: '1px solid var(--color-border)',
               display: 'inline-flex',
               alignItems: 'center',
               justifyContent: 'center',
               marginBottom: '16px',
-              boxShadow: '0 4px 12px rgba(123, 17, 26, 0.25)',
+              boxShadow: 'var(--shadow-md)',
+              padding: '2px',
             }}
           >
-            <Store size={28} />
+            <img 
+              src="/logo.jpg" 
+              alt="Toko Aysha Official Logo" 
+              style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+            />
           </div>
           <h1 style={{ fontSize: '22px', fontWeight: 800, color: 'var(--color-primary)', marginBottom: '4px' }}>
             Toko Aysha Admin

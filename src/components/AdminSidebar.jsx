@@ -47,8 +47,26 @@ export default function AdminSidebar({ isOpen, onClose }) {
       <aside className={`admin-sidebar ${isOpen ? 'open' : ''}`}>
         {/* Brand Header */}
         <div className="sidebar-header">
-          <div className="sidebar-brand-badge">
-            <Store size={20} />
+          <div 
+            style={{
+              width: '42px',
+              height: '42px',
+              borderRadius: 'var(--radius-md)',
+              overflow: 'hidden',
+              backgroundColor: '#FFFFFF',
+              border: '1px solid var(--color-border)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              boxShadow: 'var(--shadow-sm)',
+              flexShrink: 0,
+            }}
+          >
+            <img 
+              src="/logo.jpg" 
+              alt="Toko Aysha Logo" 
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+            />
           </div>
           <div className="sidebar-brand-text">
             <h1>Toko Aysha</h1>
