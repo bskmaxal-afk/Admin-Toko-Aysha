@@ -1,5 +1,6 @@
 /* ==========================================================================
    Admin Dashboard Layout & Styles
+   Toko Aysha Asian Market — Burgundy Maroon & Warm Cream Theme
    ========================================================================== */
 
 .admin-layout {
@@ -21,6 +22,7 @@
   left: 0;
   z-index: 40;
   transition: transform var(--transition-normal);
+  border-top: 3px solid var(--color-accent); /* Antique gold decorative accent */
 }
 
 .sidebar-header {
@@ -32,32 +34,34 @@
 }
 
 .sidebar-brand-badge {
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: var(--radius-md);
-  background: var(--color-brand);
-  color: #FFFFFF;
+  background: var(--color-primary);
+  color: #FDE68A; /* Warm gold icon accent */
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
   font-size: 16px;
   flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(123, 17, 26, 0.2);
 }
 
 .sidebar-brand-text h1 {
   font-size: 16px;
-  font-weight: 700;
-  color: var(--color-text-main);
+  font-weight: 800;
+  color: var(--color-primary);
   line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 .sidebar-brand-text p {
   font-size: 11px;
-  color: var(--color-text-muted);
-  font-weight: 500;
+  color: var(--color-accent);
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
 }
 
 .sidebar-nav {
@@ -79,6 +83,7 @@
   font-weight: 600;
   font-size: 14px;
   transition: all var(--transition-fast);
+  border-left: 3px solid transparent;
 }
 
 .nav-link:hover {
@@ -89,6 +94,8 @@
 .nav-link.active {
   background-color: var(--color-primary-light);
   color: var(--color-primary);
+  border-left: 3px solid var(--color-primary);
+  font-weight: 700;
 }
 
 .nav-link-badge {
@@ -107,6 +114,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: var(--color-surface-soft);
 }
 
 .user-profile-bar {
@@ -122,10 +130,11 @@
   border-radius: var(--radius-full);
   background-color: var(--color-primary-light);
   color: var(--color-primary);
+  border: 1px solid var(--color-primary-subtle);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 13px;
   flex-shrink: 0;
 }
@@ -145,8 +154,10 @@
 
 .user-details .role {
   font-size: 11px;
-  color: var(--color-text-muted);
-  text-transform: capitalize;
+  color: var(--color-accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* Main Content Area */
@@ -187,8 +198,9 @@
 
 .header-title-box h2 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text-main);
+  letter-spacing: -0.01em;
 }
 
 .header-right {
@@ -215,12 +227,20 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  border: 1px solid var(--color-border);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-border-hover);
 }
 
 .stat-info p {
   font-size: 13px;
   font-weight: 600;
-  color: var(--color-text-muted);
+  color: var(--color-text-secondary);
   margin-bottom: 6px;
 }
 
@@ -249,6 +269,7 @@
   align-items: center;
   gap: 12px;
   margin-bottom: 20px;
+  border: 1px solid var(--color-border);
 }
 
 .search-input-box {
@@ -270,7 +291,7 @@
 .search-input-box input:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(27, 104, 57, 0.1);
+  box-shadow: 0 0 0 3px rgba(123, 17, 26, 0.12);
 }
 
 .search-input-icon {
@@ -291,7 +312,7 @@
   font-size: 14px;
   cursor: pointer;
   appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23685A5B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 10px center;
 }
@@ -299,12 +320,14 @@
 .select-filter:focus {
   outline: none;
   border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(123, 17, 26, 0.12);
 }
 
 /* Tables */
 .table-container {
   overflow-x: auto;
   border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
 }
 
 .admin-table {
@@ -316,7 +339,7 @@
 
 .admin-table th {
   background-color: var(--color-bg-alt);
-  color: var(--color-text-secondary);
+  color: var(--color-text-main);
   font-weight: 700;
   padding: 12px 16px;
   border-bottom: 1px solid var(--color-border);
@@ -346,7 +369,7 @@
   height: 48px;
   border-radius: var(--radius-sm);
   object-fit: cover;
-  background-color: var(--color-bg-alt);
+  background-color: var(--color-bg);
   border: 1px solid var(--color-border);
   flex-shrink: 0;
   display: flex;
@@ -355,14 +378,14 @@
 }
 
 .product-cell-name {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-text-main);
   line-height: 1.3;
 }
 
 .product-cell-brand {
   font-size: 12px;
-  color: var(--color-text-muted);
+  color: var(--color-text-secondary);
 }
 
 /* Badges */
@@ -370,10 +393,10 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 3px 8px;
+  padding: 4px 9px;
   border-radius: var(--radius-full);
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -409,6 +432,7 @@
   justify-content: space-between;
   padding: 16px 20px;
   border-top: 1px solid var(--color-border);
+  background-color: var(--color-surface);
 }
 
 /* Product Form Layout */
@@ -424,6 +448,7 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  border: 1px solid var(--color-border);
 }
 
 .form-group {
@@ -439,7 +464,7 @@
 }
 
 .form-label .required {
-  color: #DC2626;
+  color: var(--color-primary);
   margin-left: 2px;
 }
 
@@ -450,24 +475,24 @@
   background-color: #FFFFFF;
   color: var(--color-text-main);
   font-size: 14px;
-  transition: border-color var(--transition-fast);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .form-input:focus, .form-textarea:focus, .form-select:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(27, 104, 57, 0.1);
+  box-shadow: 0 0 0 3px rgba(123, 17, 26, 0.12);
 }
 
 .form-error {
   font-size: 12px;
-  color: #DC2626;
-  font-weight: 500;
+  color: var(--color-primary);
+  font-weight: 600;
 }
 
 .form-help {
   font-size: 12px;
-  color: var(--color-text-muted);
+  color: var(--color-text-secondary);
 }
 
 /* Image Uploader */
@@ -476,7 +501,7 @@
   border-radius: var(--radius-md);
   padding: 24px 16px;
   text-align: center;
-  background-color: var(--color-surface-soft);
+  background-color: var(--color-bg);
   cursor: pointer;
   transition: all var(--transition-fast);
 }
@@ -490,7 +515,7 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(34, 24, 25, 0.6);
   backdrop-filter: blur(4px);
   z-index: 50;
   display: flex;
@@ -506,6 +531,7 @@
   width: 100%;
   padding: 24px;
   box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border);
   animation: modalIn 0.2s ease-out;
 }
 
@@ -522,18 +548,18 @@
   align-items: center;
   gap: 10px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
 .alert-success {
-  background-color: #DEF7EC;
-  color: #03543F;
-  border: 1px solid #BCF0DA;
+  background-color: #EDF7F1;
+  color: #1B6839;
+  border: 1px solid #C8E8D5;
 }
 
 .alert-error {
-  background-color: #FDE8E8;
-  color: #9B1C1C;
-  border: 1px solid #F8B4B4;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary-subtle);
 }

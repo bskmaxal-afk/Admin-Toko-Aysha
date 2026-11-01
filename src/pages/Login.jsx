@@ -58,29 +58,31 @@ export default function Login() {
           width: '100%',
           padding: '36px 32px',
           boxShadow: 'var(--shadow-lg)',
+          borderTop: '4px solid var(--color-primary)',
         }}
       >
         {/* Brand Header */}
         <div style={{ textAlign: 'center', marginBottom: '28px' }}>
           <div 
             style={{
-              width: '54px',
-              height: '54px',
+              width: '56px',
+              height: '56px',
               borderRadius: 'var(--radius-lg)',
-              backgroundColor: 'var(--color-brand)',
-              color: '#FFFFFF',
+              backgroundColor: 'var(--color-primary)',
+              color: '#FDE68A',
               display: 'inline-flex',
               alignItems: 'center',
               justifyContent: 'center',
               marginBottom: '16px',
+              boxShadow: '0 4px 12px rgba(123, 17, 26, 0.25)',
             }}
           >
             <Store size={28} />
           </div>
-          <h1 style={{ fontSize: '22px', fontWeight: 800, color: 'var(--color-text-main)', marginBottom: '4px' }}>
+          <h1 style={{ fontSize: '22px', fontWeight: 800, color: 'var(--color-primary)', marginBottom: '4px' }}>
             Toko Aysha Admin
           </h1>
-          <p style={{ fontSize: '14px', color: 'var(--color-text-muted)' }}>
+          <p style={{ fontSize: '13px', color: 'var(--color-accent)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.6px' }}>
             Asian Market Inventory Management
           </p>
         </div>

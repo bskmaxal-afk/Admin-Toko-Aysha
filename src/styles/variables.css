@@ -1,44 +1,45 @@
 :root {
-  /* Brand Palette - Toko Aysha Admin */
-  --color-primary: #1B6839;           /* Forest Green (Primary actions) */
-  --color-primary-hover: #144E2B;     /* Deep Forest Green */
-  --color-primary-light: #EDF7F1;     /* Pale green tint */
-  --color-primary-subtle: #C8E8D5;
+  /* Brand Color Palette - 100% Aligned with Toko Aysha Main Website */
+  --color-primary: #7B111A;           /* Deep Burgundy / Maroon (from Toko Aysha official logo) */
+  --color-primary-hover: #5E0D14;     /* Rich Dark Wine */
+  --color-primary-light: #FBF2F3;     /* Soft rose/maroon tinted cream */
+  --color-primary-subtle: #F3DADB;    /* Subtle maroon tint for pills/borders */
 
-  --color-brand: #7B111A;             /* Terracotta / Maroon (Store Brand Accent) */
+  --color-brand: #7B111A;             /* Official Brand Color */
   --color-brand-hover: #5E0D14;
   --color-brand-light: #FBF2F3;
 
-  --color-accent: #9A6F24;            /* Warm Asian Gold */
-  --color-accent-light: #FAF4E8;
+  --color-accent: #9A6F24;            /* Antique Warm Gold (from banner cloud border & batik) */
+  --color-accent-hover: #7E5718;      /* Darker Antique Gold */
+  --color-accent-light: #FAF4E8;      /* Subtle Ivory Gold Tint */
 
   --color-bg: #FAF7F2;                /* Warm Asian Market Cream */
-  --color-bg-alt: #F4EFE6;            /* Neutral stone */
-  --color-surface: #FFFFFF;           /* Card / Modal White */
-  --color-surface-soft: #FDFBF9;
+  --color-bg-alt: #F2ECE2;            /* Warm Neutral Stone */
+  --color-surface: #FFFFFF;           /* Pure White */
+  --color-surface-soft: #FDFBF8;      /* Off-white */
 
-  --color-text-main: #1F2937;         /* High readability charcoal */
-  --color-text-secondary: #4B5563;    /* Medium gray */
-  --color-text-muted: #6B7280;        /* Subtle gray */
-  --color-text-light: #9CA3AF;
-  --color-text-inverse: #FFFFFF;
+  --color-text-main: #221819;         /* Deep Warm Charcoal with maroon undertone */
+  --color-text-secondary: #685A5B;    /* Muted warm gray */
+  --color-text-muted: #8A7B7C;        /* Warm muted */
+  --color-text-light: #9E9091;        /* Light muted */
+  --color-text-inverse: #FFFFFF;      /* White text */
 
-  --color-border: #E5E7EB;            /* Crisp border */
-  --color-border-subtle: #E8E0D6;     /* Warm border */
-  --color-border-hover: #D1D5DB;
+  --color-border: #E8E0D6;            /* Soft warm border */
+  --color-border-hover: #D4C7B8;      /* Darker warm border */
+  --color-divider: #EDE5DA;
 
   /* Status Colors */
-  --color-status-published: #1B6839;
+  --color-status-published: #1B6839;  /* Fresh Jade Green */
   --color-status-published-bg: #EDF7F1;
-  --color-status-draft: #D97706;
+  --color-status-draft: #C26308;      /* Warm Amber */
   --color-status-draft-bg: #FEF3C7;
-  --color-status-archived: #DC2626;
-  --color-status-archived-bg: #FEE2E2;
+  --color-status-archived: #7B111A;   /* Burgundy Maroon */
+  --color-status-archived-bg: #FBF2F3;
 
   --color-available: #1B6839;
   --color-available-bg: #EDF7F1;
-  --color-unavailable: #6B7280;
-  --color-unavailable-bg: #F3F4F6;
+  --color-unavailable: #685A5B;
+  --color-unavailable-bg: #F2ECE2;
 
   /* Typography */
   --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -52,11 +53,12 @@
   --radius-xl: 20px;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
-  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-sm: 0 1px 3px rgba(34, 24, 25, 0.05);
+  --shadow-md: 0 4px 12px rgba(34, 24, 25, 0.07), 0 2px 4px rgba(34, 24, 25, 0.04);
+  --shadow-lg: 0 10px 24px rgba(34, 24, 25, 0.09), 0 4px 8px rgba(34, 24, 25, 0.04);
+  --shadow-card: 0 2px 6px rgba(34, 24, 25, 0.04);
+  --shadow-card-hover: 0 8px 20px rgba(34, 24, 25, 0.08);
 
   --transition-fast: 150ms ease;
-  --transition-normal: 200ms ease;
+  --transition-normal: 220ms ease;
 }

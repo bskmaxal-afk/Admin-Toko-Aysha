@@ -52,10 +52,11 @@ export default function AdminHeader({ onToggleSidebar }) {
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-secondary btn-sm"
+          style={{ borderColor: 'var(--color-border)', color: 'var(--color-primary)', fontWeight: 700 }}
           title="Visit Public Toko Aysha Website"
         >
-          <ExternalLink size={14} />
-          <span style={{ display: 'none', md: 'inline' }}>Storefront</span>
+          <ExternalLink size={14} style={{ color: 'var(--color-accent)' }} />
+          <span>Live Storefront</span>
         </a>
       </div>
     </header>
