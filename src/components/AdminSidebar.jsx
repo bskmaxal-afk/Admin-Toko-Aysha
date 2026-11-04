@@ -7,7 +7,6 @@ import {
   Tags, 
   Globe2, 
   Archive, 
-  Settings, 
   LogOut, 
   ExternalLink,
   Store
@@ -30,7 +29,6 @@ export default function AdminSidebar({ isOpen, onClose }) {
     { to: '/categories', label: 'Categories', icon: Tags },
     { to: '/countries', label: 'Countries', icon: Globe2 },
     { to: '/archived', label: 'Archived Products', icon: Archive },
-    { to: '/settings', label: 'Settings', icon: Settings },
   ];
 
   return (
